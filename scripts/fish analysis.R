@@ -11,8 +11,10 @@ fish_data_cat <- fish_data %>%
 
 fish_data_cat_clean <- filter(fish_data_cat, scalelength > 1)
 
+library(ggplot2)
 ggplot(fish_data_cat, aes(x = scalelength, fill = length_cat)) +
-  geom_histogram()
+geom_histogram(bins = 80)
   
+ggsave("scale_hist_by_length.jpg")
   #add some comments
   
