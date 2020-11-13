@@ -1,5 +1,5 @@
 
-fish_data <- read.csv("data/Gaeta_etal_CLC_data_1.csv")
+fish_data <- read.csv("~/FISH 274/FISH 274 R programming/Week 7/Andy-Ni/data/Gaeta_etal_CLC_data_1.csv")
 
 
 library(dplyr)
