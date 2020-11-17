@@ -417,6 +417,19 @@ summary {
 <div id="concept" class="section level2">
 <h2>Concept</h2>
 <p>Exploration of population dynamic patterns at <strong>The Portal Project</strong>. How do counts of rodents like <em>Dipodomys</em> species change through time?</p>
+<pre class="r"><code>library(dplyr)</code></pre>
+<pre><code>## Warning: package &#39;dplyr&#39; was built under R version 4.0.3</code></pre>
+<pre class="r"><code>library(ggplot2)</code></pre>
+<pre><code>## Warning: package &#39;ggplot2&#39; was built under R version 4.0.3</code></pre>
+<pre class="r"><code>data &lt;- read.csv(&quot;https://ndownloader.figshare.com/files/2292172&quot;)
+head(data)</code></pre>
+<pre><code>##   record_id month day year plot_id species_id sex hindfoot_length weight
+## 1         1     7  16 1977       2         NL   M              32     NA
+## 2         2     7  16 1977       3         NL   M              33     NA
+## 3         3     7  16 1977       2         DM   F              37     NA
+## 4         4     7  16 1977       7         DM   M              36     NA
+## 5         5     7  16 1977       3         DM   M              35     NA
+## 6         6     7  16 1977       1         PF   M              14     NA</code></pre>
 <p>In this document I will:</p>
 <ol style="list-style-type: decimal">
 <li>Load data from the <a href="http://figshare.com/articles/Portal_Project_Teaching_Database/1314459">Portal Project Teaching Database</a></li>

@@ -7,6 +7,14 @@ output: html_document
 
 Exploration of population dynamic patterns at **The Portal Project**.
 How do counts of rodents like *Dipodomys* species change through time?
+```{r,message=FALSE}
+library(dplyr)
+library(ggplot2)
+```
+```{r, message=TRUE}
+data <- read.csv("https://ndownloader.figshare.com/files/2292172")
+head(data)
+```
 
 In this document I will:
 
